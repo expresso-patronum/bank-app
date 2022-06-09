@@ -1,0 +1,481 @@
+CRITICAL - 2022-06-05 14:08:21 --> Undefined property: App\Controllers\Home::$session
+in APPPATH\Controllers\Home.php on line 76.
+ 1 APPPATH\Controllers\Home.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$session', 'APPPATH\\Controllers\\Home.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->logar()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 14:10:02 --> Undefined property: App\Controllers\Home::$session
+in APPPATH\Controllers\Home.php on line 76.
+ 1 APPPATH\Controllers\Home.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$session', 'APPPATH\\Controllers\\Home.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->logar()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 14:13:52 --> Undefined property: App\Controllers\Home::$session
+in APPPATH\Controllers\Home.php on line 77.
+ 1 APPPATH\Controllers\Home.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$session', 'APPPATH\\Controllers\\Home.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->logar()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 14:14:06 --> Undefined property: App\Controllers\Home::$session
+in APPPATH\Controllers\Home.php on line 77.
+ 1 APPPATH\Controllers\Home.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$session', 'APPPATH\\Controllers\\Home.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->logar()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 14:24:47 --> Undefined variable $contaCorrente
+in APPPATH\Views\pagInicial.php on line 53.
+ 1 APPPATH\Views\pagInicial.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contaCorrente', 'APPPATH\\Views\\pagInicial.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagInicial.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pagInicial', [], true)
+ 5 APPPATH\Controllers\Home.php(52): view('pagInicial')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->cadastrar()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 15:24:27 --> Undefined array key "tipo"
+in APPPATH\Controllers\Home.php on line 118.
+ 1 APPPATH\Controllers\Home.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipo"', 'APPPATH\\Controllers\\Home.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-05 15:32:08 --> Unknown column 'username' in 'where clause'
+CRITICAL - 2022-06-05 15:32:08 --> Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 223.
+ 1 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Models\TransactionsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions([...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 15:32:54 --> Call to undefined method App\Models\TransactionsModel::getTransaction
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Home.php(116): CodeIgniter\Model->__call('getTransaction', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-05 15:33:15 --> Unknown column 'username' in 'where clause'
+CRITICAL - 2022-06-05 15:33:15 --> Call to a member function getFirstRow() on bool
+in SYSTEMPATH\Model.php on line 249.
+ 1 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 2 APPPATH\Models\TransactionsModel.php(14): CodeIgniter\BaseModel->first()
+ 3 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions([...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-05 15:37:44 --> Table 'bank.produto' doesn't exist
+CRITICAL - 2022-06-05 15:37:44 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\TransactionsModel.php on line 20.
+ 1 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions([...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-05 15:38:18 --> Table 'bank.produto' doesn't exist
+CRITICAL - 2022-06-05 15:38:18 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\TransactionsModel.php on line 20.
+ 1 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions([...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-05 15:38:24 --> Table 'bank.produto' doesn't exist
+CRITICAL - 2022-06-05 15:38:24 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\TransactionsModel.php on line 20.
+ 1 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions([...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-05 15:38:32 --> Table 'bank.produto' doesn't exist
+CRITICAL - 2022-06-05 15:38:32 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\TransactionsModel.php on line 20.
+ 1 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions([...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-05 15:38:48 --> Table 'bank.produto' doesn't exist
+CRITICAL - 2022-06-05 15:38:48 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\TransactionsModel.php on line 20.
+ 1 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions([...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-05 15:39:13 --> Illegal parameter data types varchar and row for operation '='
+CRITICAL - 2022-06-05 15:39:13 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\TransactionsModel.php on line 20.
+ 1 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions([...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 15:40:28 --> Undefined array key 0
+in APPPATH\Models\TransactionsModel.php on line 22.
+ 1 APPPATH\Models\TransactionsModel.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\TransactionsModel.php', 22)
+ 2 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions('sasa')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 15:41:09 --> Unclosed '[' does not match ')'
+in APPPATH\Models\TransactionsModel.php on line 22.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\TransactionsModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TransactionsModel')
+ 3 APPPATH\Controllers\Home.php(115): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TransactionsModel')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-05 15:41:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+ LIMIT 1' at line 3
+CRITICAL - 2022-06-05 15:41:11 --> Call to a member function getFirstRow() on bool
+in SYSTEMPATH\Model.php on line 249.
+ 1 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 2 APPPATH\Models\TransactionsModel.php(22): CodeIgniter\BaseModel->first()
+ 3 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions('sasa')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 15:41:29 --> Undefined variable $cliente
+in APPPATH\Views\extratos.php on line 12.
+ 1 APPPATH\Views\extratos.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cliente', 'APPPATH\\Views\\extratos.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extratos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extratos', [], true)
+ 5 APPPATH\Controllers\Home.php(117): view('extratos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 15:47:54 --> Cannot use [] for reading
+in APPPATH\Models\TransactionsModel.php on line 21.
+ 1 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions('sasa')
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 15:48:12 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Database\\Query.php', 329)
+ 2 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT *
+FROM `transacao`
+WHERE `conta` = :conta:
+ LIMIT 1', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transacao`
+WHERE `conta` = :conta:
+ LIMIT 1', [...], false)
+ 7 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 8 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 9 APPPATH\Models\TransactionsModel.php(21): CodeIgniter\BaseModel->first()
+10 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions('sasa')
+11 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+12 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-05 15:48:24 --> Illegal parameter data types varchar and row for operation '='
+CRITICAL - 2022-06-05 15:48:24 --> Call to a member function getFirstRow() on bool
+in SYSTEMPATH\Model.php on line 249.
+ 1 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 2 APPPATH\Models\TransactionsModel.php(21): CodeIgniter\BaseModel->first()
+ 3 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions('sasa')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-05 15:48:49 --> Illegal parameter data types varchar and row for operation '='
+CRITICAL - 2022-06-05 15:48:49 --> Call to a member function getFirstRow() on bool
+in SYSTEMPATH\Model.php on line 249.
+ 1 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 2 APPPATH\Models\TransactionsModel.php(22): CodeIgniter\BaseModel->first()
+ 3 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions('sasa')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 15:49:00 --> Undefined variable $cliente
+in APPPATH\Views\extratos.php on line 12.
+ 1 APPPATH\Views\extratos.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cliente', 'APPPATH\\Views\\extratos.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extratos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extratos', [], true)
+ 5 APPPATH\Controllers\Home.php(117): view('extratos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-05 15:49:25 --> Illegal parameter data types varchar and row for operation '='
+CRITICAL - 2022-06-05 15:49:25 --> Call to a member function getFirstRow() on bool
+in SYSTEMPATH\Model.php on line 249.
+ 1 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 2 APPPATH\Models\TransactionsModel.php(22): CodeIgniter\BaseModel->first()
+ 3 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions('sasa')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 15:49:38 --> Undefined variable $cliente
+in APPPATH\Views\extratos.php on line 12.
+ 1 APPPATH\Views\extratos.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cliente', 'APPPATH\\Views\\extratos.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extratos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extratos', [], true)
+ 5 APPPATH\Controllers\Home.php(117): view('extratos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 15:50:31 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Database\\Query.php', 329)
+ 2 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT *
+FROM `transacao`
+WHERE `conta` = :conta:
+ LIMIT 1', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transacao`
+WHERE `conta` = :conta:
+ LIMIT 1', [...], false)
+ 7 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 8 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 9 APPPATH\Models\TransactionsModel.php(22): CodeIgniter\BaseModel->first()
+10 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions('sasa')
+11 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+12 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 15:53:25 --> syntax error, unexpected token "}"
+in APPPATH\Models\TransactionsModel.php on line 24.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\TransactionsModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TransactionsModel')
+ 3 APPPATH\Controllers\Home.php(115): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TransactionsModel')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 15:54:39 --> Undefined array key "tipo"
+in APPPATH\Models\TransactionsModel.php on line 22.
+ 1 APPPATH\Models\TransactionsModel.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipo"', 'APPPATH\\Models\\TransactionsModel.php', 22)
+ 2 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions('sasa')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 15:55:09 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Database\\Query.php', 329)
+ 2 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT *
+FROM `transacao`
+WHERE `conta` = :conta:
+ LIMIT 1', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transacao`
+WHERE `conta` = :conta:
+ LIMIT 1', [...], false)
+ 7 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 8 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 9 APPPATH\Models\TransactionsModel.php(22): CodeIgniter\BaseModel->first()
+10 APPPATH\Controllers\Home.php(116): App\Models\TransactionsModel->getTransactions('sasa')
+11 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+12 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 15:56:04 --> Undefined variable $cliente
+in APPPATH\Views\extratos.php on line 12.
+ 1 APPPATH\Views\extratos.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cliente', 'APPPATH\\Views\\extratos.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extratos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extratos', [], true)
+ 5 APPPATH\Controllers\Home.php(117): view('extratos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 15:56:13 --> Undefined variable $cliente
+in APPPATH\Views\extratos.php on line 12.
+ 1 APPPATH\Views\extratos.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cliente', 'APPPATH\\Views\\extratos.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extratos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extratos', [], true)
+ 5 APPPATH\Controllers\Home.php(117): view('extratos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 15:56:38 --> Array to string conversion
+in APPPATH\Views\extratos.php on line 12.
+ 1 APPPATH\Views\extratos.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\extratos.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extratos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extratos', [], true)
+ 5 APPPATH\Controllers\Home.php(117): view('extratos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 16:46:08 --> Undefined variable $contaCorrente
+in APPPATH\Views\extratos.php on line 72.
+ 1 APPPATH\Views\extratos.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contaCorrente', 'APPPATH\\Views\\extratos.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extratos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extratos', [], true)
+ 5 APPPATH\Controllers\Home.php(117): view('extratos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 16:50:07 --> Undefined variable $contaCorrente
+in APPPATH\Views\extratos.php on line 72.
+ 1 APPPATH\Views\extratos.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contaCorrente', 'APPPATH\\Views\\extratos.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extratos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extratos', [], true)
+ 5 APPPATH\Controllers\Home.php(117): view('extratos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 16:51:13 --> Undefined variable $contaCorrente
+in APPPATH\Views\extratos.php on line 72.
+ 1 APPPATH\Views\extratos.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contaCorrente', 'APPPATH\\Views\\extratos.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extratos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extratos', [], true)
+ 5 APPPATH\Controllers\Home.php(117): view('extratos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 16:52:51 --> Undefined variable $contaCorrente
+in APPPATH\Views\extratos.php on line 72.
+ 1 APPPATH\Views\extratos.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contaCorrente', 'APPPATH\\Views\\extratos.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extratos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extratos', [], true)
+ 5 APPPATH\Controllers\Home.php(117): view('extratos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 19:21:49 --> Undefined array key "username"
+in APPPATH\Controllers\Home.php on line 117.
+ 1 APPPATH\Controllers\Home.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\Home.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 19:22:02 --> Undefined array key "username"
+in APPPATH\Controllers\Home.php on line 117.
+ 1 APPPATH\Controllers\Home.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\Home.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->extratos()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 20:39:01 --> Unsupported operand types: array - string
+in APPPATH\Controllers\Home.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->pagar()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-05 20:39:44 --> Column 'valor' cannot be null
+CRITICAL - 2022-06-05 20:39:44 --> Undefined variable $subtrai
+in APPPATH\Controllers\Home.php on line 153.
+ 1 APPPATH\Controllers\Home.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $subtrai', 'APPPATH\\Controllers\\Home.php', 153)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->pagar()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-05 20:41:32 --> Column 'valor' cannot be null
+ERROR - 2022-06-05 20:41:34 --> Column 'valor' cannot be null
+ERROR - 2022-06-05 20:42:36 --> Column 'valor' cannot be null
+ERROR - 2022-06-05 20:42:37 --> Column 'valor' cannot be null
+ERROR - 2022-06-05 20:42:51 --> Column 'valor' cannot be null
+ERROR - 2022-06-05 20:43:16 --> Column 'valor' cannot be null
+CRITICAL - 2022-06-05 20:54:05 --> Undefined array key "username"
+in APPPATH\Controllers\Home.php on line 159.
+ 1 APPPATH\Controllers\Home.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\Home.php', 159)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->pagar()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-05 20:54:54 --> Column 'valor' cannot be null
+CRITICAL - 2022-06-05 20:57:27 --> Undefined array key 0
+in APPPATH\Models\AccountModel.php on line 39.
+ 1 APPPATH\Models\AccountModel.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\AccountModel.php', 39)
+ 2 APPPATH\Controllers\Home.php(109): App\Models\AccountModel->getCheckingAccount(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->pagInicial()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-05 20:57:28 --> Undefined array key 0
+in APPPATH\Models\AccountModel.php on line 39.
+ 1 APPPATH\Models\AccountModel.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\AccountModel.php', 39)
+ 2 APPPATH\Controllers\Home.php(109): App\Models\AccountModel->getCheckingAccount(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->pagInicial()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
