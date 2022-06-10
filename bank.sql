@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04-Jun-2022 às 19:38
+-- Tempo de geração: 10-Jun-2022 às 03:26
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -55,7 +55,8 @@ CREATE TABLE `cliente` (
 CREATE TABLE `conta` (
   `numero` varchar(10) NOT NULL,
   `tipo` varchar(50) NOT NULL,
-  `username` varchar(30) NOT NULL
+  `username` varchar(30) NOT NULL,
+  `saldo` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -68,7 +69,7 @@ CREATE TABLE `transacao` (
   `id` int(11) NOT NULL,
   `tipo` varchar(50) NOT NULL,
   `valor` int(11) NOT NULL,
-  `conta` varchar(10) NOT NULL,
+  `conta` varchar(10) DEFAULT NULL,
   `metodoPagamento` varchar(20) NOT NULL,
   `descricao` varchar(100) NOT NULL,
   `datahora` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
