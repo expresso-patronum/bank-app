@@ -72,9 +72,9 @@
     </header>
 
     <div class="info">
-        <?php                     
-            echo "<h5>Número da conta: ".$contaCorrente."</h5>";
-            echo "<h5>Cliente: ".$cliente."</h5>";
+        <?php
+            echo "<h5>Cliente: ".$cliente."</h5>";                     
+            echo "<h5>Número da conta corrente: ".$contaCorrente."</h5>";
             echo "<h5>Saldo da conta corrente: R$ ".$saldo."</h5>";
             echo "<h5>Saldo da conta poupança: R$ ".$saldoContaPoupanca."</h5>";
         ?>
