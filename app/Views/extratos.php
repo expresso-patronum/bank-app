@@ -8,13 +8,24 @@
 </head>
 <body>
     <style>
-        
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.0em;
+        }
+
+        #logo {
+            width: 6%;
+            text-decoration: none;
+            
+        }
     button{
         margin: auto;
         background-color: rgb(32,105,92);
         color: #FFFF;
-        width: 20%;
-        height: 60px;
+        width: 15%;
+        height: 30px;
         border: none;
         border-radius: 10px;
     }
@@ -38,8 +49,6 @@
     
     .info {
         margin: auto;
-        width: 500px;
-        height: 210px;
         text-align:justify;
     }
 
@@ -50,9 +59,14 @@
         overflow: scroll;
         text-align:justify;
     }
+
+    h1{
+        text-align: center;
+    }
     </style>
 
      <header>
+     <img src="logo.png" id="logo"/>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
@@ -70,15 +84,15 @@
   
         <div class="info">
             <?php                   
-              echo "<h5>Cliente: ".$cliente."</h5>";  
-            echo "<h5>Número da conta: ".$contaCorrente."</h5>";
-          
-          
+                echo "<h5>Cliente: ".$cliente."</h5>";  
+                echo "<h5>Número da conta: ".$contaCorrente."</h5>";
+                echo "<h5>Saldo: R$ ".$saldo."</h5>";
             ?>
         </div>
-        <button>
-    Logout
-</button>
+
+        <?php
+            echo "<form action='/deslogar/".$username['username']."' method='post'> <button type='submit'>Logout</button></form>";
+        ?>
     </header>
     <h1>Extratos</h1>
             <div class="scroll">

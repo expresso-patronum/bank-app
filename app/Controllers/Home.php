@@ -82,7 +82,7 @@ class Home extends BaseController
         return redirect()->to(base_url('/'));
         $session->setFlashdata("messageRegisterOk", "Registro feito com sucesso!");
 
-        //$this->cadastrarProdutoToDB($product_model);
+      
     
     }
 
@@ -114,8 +114,7 @@ class Home extends BaseController
 
         if ($cliente['senha'] ==  crypt($data['senha'], '$2a$' . $custo . '$' . $salt . '$')) {
             session()->set(['username'=>$data['username']]);
-           // session()->setFlashdata('messageRegisterOk','messageRegisterOk');
-            //$this->session->setFlashdata('messageRegisterOk',' Registered Successfull. Please, login.' );
+     
             $session = session();
             $session->setFlashdata("messageRegisterOk", "Login feito com sucesso");
           
@@ -161,11 +160,18 @@ class Home extends BaseController
         $account_model = new AccountModel();
         $result1 = $transaction_model->getTransactions($username['username']);
         $result2 = $account_model->getCheckingAccount($username['username']);
-        echo view ('extratos', ['transacoes'=> $result1, 'contaCorrente'=> $result2['numero'], 'cliente'=> $result2['nome'], 'saldo'=> $result2['saldo']]);//'username'=>$username, 'tipo'=>$result['tipo'], 'descricao'=>$result['descricao'], 'data'=>$result['datahora']]);
+        echo view ('extratos', ['transacoes'=> $result1, 'contaCorrente'=> $result2['numero'], 'cliente'=> $result2['nome'], 'saldo'=> $result2['saldo'], 'username'=>$username]);//'username'=>$username, 'tipo'=>$result['tipo'], 'descricao'=>$result['descricao'], 'data'=>$result['datahora']]);
     }
 
     public function pagamentos() {
-        echo view('pagamentos');
+        $username = session()->get();
+        $transaction_model = new TransactionsModel();
+        $account_model = new AccountModel();
+        $result1 = $transaction_model->getTransactions($username['username']);
+        $result2 = $account_model->getCheckingAccount($username['username']);
+        $result3 = $account_model->getSavingAccount($username['username']);
+        echo view('pagamentos',['transacoes'=> $result1, 'contaCorrente'=> $result2['numero'], 'cliente'=> $result2['nome'], 'saldo'=> $result2['saldo'], 'saldoContaPoupanca'=> $result3['saldo'], 'username'=>$username]);
+   
     }
     public function poupanca(){
         $username = session()->get();
@@ -184,10 +190,9 @@ class Home extends BaseController
         $transaction_model = new TransactionsModel();
         $account_model = new AccountModel();
         
-        $result = $account_model->getSavingAccount($username['username']); //poupanca
-       //$result['conta'] É A NOSSA CONTA QUE RECEBE
-       //$result2['conta'] É A NOSSA CONTA QUE PAGA
-        $result2 = $account_model->getCheckingAccount($username['username']); //conta corrente
+        $result = $account_model->getSavingAccount($username['username']); 
+ 
+        $result2 = $account_model->getCheckingAccount($username['username']); 
 
         $dataPag = array(
     
@@ -201,7 +206,7 @@ class Home extends BaseController
 
             'descricao' => 'Pagamento por meio de aplic. na poup.'
 
-        ); // colocar no banco o pagamento
+        ); 
         
         $dataReceb = array(
     
@@ -215,13 +220,13 @@ class Home extends BaseController
 
             'descricao' => 'Recebimento por meio de aplic. na poup.'
 
-        ); // colocar no banco o recebimento
+        ); 
 
         $saldoPoupanca = $account_model->getSaldo($result['numero']);
         $saldoCorrente = $account_model->getSaldo($result2['numero']);
 
 
-        if($saldoCorrente['saldo'] >= 0 && $saldoCorrente['saldo'] > $dataPag['valor']) {
+        if($saldoCorrente['saldo'] >= 0 && $saldoCorrente['saldo'] >= $dataPag['valor']) {
             
             $subtrai = (int)($saldoCorrente['saldo'] - $dataPag['valor']);
 
@@ -257,10 +262,9 @@ class Home extends BaseController
         $transaction_model = new TransactionsModel();
         $account_model = new AccountModel();
         
-        $result = $account_model->getSavingAccount($username['username']); //poupanca
-       //$result['conta'] É A NOSSA CONTA QUE RECEBE
-       //$result2['conta'] É A NOSSA CONTA QUE PAGA
-        $result2 = $account_model->getCheckingAccount($username['username']); //conta corrente
+        $result = $account_model->getSavingAccount($username['username']); 
+     
+        $result2 = $account_model->getCheckingAccount($username['username']); 
 
         $dataResg = array(
     
@@ -288,13 +292,13 @@ class Home extends BaseController
 
             'descricao' => 'Recebimento por resgate da conta poup.'
 
-        ); // colocar no banco o recebimento
+        ); 
 
         $saldoPoupanca = $account_model->getSaldo($result['numero']);
         $saldoCorrente = $account_model->getSaldo($result2['numero']);
 
 
-        if($saldoPoupanca['saldo'] >= 0 && $saldoPoupanca['saldo'] > $dataResg['valor']) {
+        if($saldoPoupanca['saldo'] >= 0 && $saldoPoupanca['saldo'] >= $dataResg['valor']) {
             
             $subtrai = (int)($saldoPoupanca['saldo'] - $dataResg['valor']);
 
@@ -344,7 +348,7 @@ class Home extends BaseController
         );
 
         $saldo = $account_model->getSaldo($result['numero']);
-        if($saldo['saldo'] >= 0 && $saldo['saldo'] > $data['valor']) {
+        if($saldo['saldo'] >= 0 && $saldo['saldo'] >= $data['valor']) {
             $subtrai = (int)($saldo['saldo'] - $data['valor']);
 
             $dataConta = array(
@@ -370,15 +374,14 @@ class Home extends BaseController
         $account_model = new AccountModel();
         $result1 = $transaction_model->getTransactions($username['username']);
         $result2 = $account_model->getCheckingAccount($username['username']);
-        echo view('transferencia',['transacoes'=> $result1, 'contaCorrente'=> $result2['numero'], 'cliente'=> $result2['nome'], 'saldo'=> $result2['saldo']]);
-    
+        echo view('transferencia',['transacoes'=> $result1, 'contaCorrente'=> $result2['numero'], 'cliente'=> $result2['nome'], 'saldo'=> $result2['saldo'], 'username'=>$username]);
     }
 
     public function transferir() {
         $username = session()->get();
         $account_model = new AccountModel();
         $transaction_model = new TransactionsModel();
-        $result = $account_model->getCheckingAccount($username['username']); // pessoa q ta pagando
+       $result = $account_model->getCheckingAccount($username['username']); 
 
 
         $data1 = array(
@@ -409,29 +412,42 @@ class Home extends BaseController
 
         );
 
-        $saldo = $account_model->getSaldo($result['numero']); // saldo da conta que ta enviando
-        $saldoDestino = $account_model->getSaldo($data2['conta']); // saldo da conta destino
+      
+        $checa = $account_model->getAccount($data2['conta']);
+        $saldo = $account_model->getSaldo($result['numero']); 
 
-        if($saldo['saldo'] >= 0 && $saldo['saldo'] > $data1['valor']) {
-            $subtrai = (int)($saldo['saldo'] - $data1['valor']);
-            $soma = (int)($saldoDestino['saldo'] + $data2['valor']);
+        if($checa != false) {
 
-            $dataConta = array(
-                'saldo' => $subtrai
-            );
+            $saldoDestino = $account_model->getSaldo($data2['conta']);
+          
+            if($saldo['saldo'] >= 0 && $saldo['saldo'] >= $data1['valor']) {
+                $subtrai = (int)($saldo['saldo'] - $data1['valor']);
+                $soma = (int)($saldoDestino['saldo'] + $data2['valor']);
 
-            $dataContaDestino = array(
-                'saldo' => $soma
-            );
+                $dataConta = array(
+                    'saldo' => $subtrai
+                );
 
-            $transaction_model->insertTransaction($data1);
-            $transaction_model->insertTransaction($data2);
-            $account_model->updateAccount($result['numero'], $dataConta);
-            $account_model->updateAccount($data2['conta'], $dataContaDestino);
-            return redirect()->to(base_url('/transferencia'));
-        
+                $dataContaDestino = array(
+                    'saldo' => $soma
+                );
+
+                $transaction_model->insertTransaction($data1);
+                $transaction_model->insertTransaction($data2);
+                $account_model->updateAccount($result['numero'], $dataConta);
+                $account_model->updateAccount($data2['conta'], $dataContaDestino);
+                return redirect()->to(base_url('/transferencia'));
+            
+
+            } else {
+            
+                session()->set($username);
+                $session = session();
+                $session->setFlashdata("messageTransferError", "Erro ao realizar a transferência!");
+                return redirect()->to(base_url('/transferencia'));
+            }
         } else {
-
+        
             session()->set($username);
             $session = session();
             $session->setFlashdata("messageTransferError", "Erro ao realizar a transferência!");

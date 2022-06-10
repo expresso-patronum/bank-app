@@ -7,10 +7,51 @@
     <title>Poupança</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95em;
+}
+    form{
+        height:100px;
+        width: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 2%;
+    }
+    input{
+        width: 40%;
+        margin-top: 4%;
+        background-color:#B4E4D9;     
+    }
+
+    button{
+        margin: auto;
+     margin-top:2%;
+        background-color: rgb(32,105,92);
+        color: white;
+        width: 15%;
+        height: 30px;
+        border: none;
+        border-radius: 10px;
+    }
+    #logo {
+            width: 6%;
+            text-decoration: none;
+            
+        }
+    </style>
 </head>
 <body>
 
     <header>
+    <img src="logo.png" id="logo"/>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>

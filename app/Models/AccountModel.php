@@ -22,12 +22,18 @@ class AccountModel extends Model {
         $query = $builder->get();
         $saldo = $query->getResultArray();
 
+        if ($saldo !== NULL){
+
+            return $saldo[0];
+        } else {
+            return false;
+        }
+
         return $saldo[0];
     }
 
     public function getCheckingAccount($cliente) {
         $db = db_connect();
-        //return $this->asArray()->where(['usuario' => $usuario])->first();
         $builder = $db->table('conta');
         $builder->select('*');
         $builder->join('cliente', 'cliente.username = conta.username');
@@ -59,7 +65,6 @@ class AccountModel extends Model {
         $builder->where('conta.tipo', 'poupanca');
         $query = $builder->get();
         $contas = $query->getResultArray();
-
         return $contas[0];
     
     }
